@@ -84,6 +84,20 @@
   list-style: none;
 }
 
+.footer {
+  background-color: #2b2b2b;
+  margin-left: -6px;
+}
+
+.footer2 {
+  margin-left: -25px;
+}
+
+.footer h5 {
+  color: silver;
+
+}
+
 .footer-links a {
   color: white;
 }
@@ -93,9 +107,6 @@
   text-decoration: none;
 }
 .content-four {
-  background: #d4d4d4;
+  background: #2b2b2b;
 }
 
-.footer {
-  margin-left: -10px;
-}
