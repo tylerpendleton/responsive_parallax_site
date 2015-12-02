@@ -1,50 +1,141 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-      <script src="js/skrollr.js"></script>
-      <script src="js/_main.js"></script>
-      <link rel = 'stylesheet' type = 'text/css' href = 'css/stylesheet.css'>
-    </head>
-    <body>
-      <section id = 'slide-1' class = 'homeSlide'>
-      <div class = 'bcg'
-	data-center = 'background-position: 50% 0px;"
-	data-top-bottom = 'background-position 50% -100px;
-	data-anchor-target = '#slide-1'
-	>
-	<div class = 'hsContainer'>
-	  <div class = 'hsContent'
-	    data-center = 'opacity: 1'
-	    data-106-top = 'opacity: 0'
-	    data-anchor-target = '#slide-1 h2'
-	    >
-	    <h2>Fade out elements before <br>the leave the viewport</h2>
-	  </div>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js'></script>
+    <script src="js/_main.js"></script>
+    <link rel = 'stylesheet' type = 'text/css' href = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css'>
+    <link rel = 'stylesheet' type = 'text/css' href = 'css/stylesheet.css'>
+  </head>
+  <body>
+    <!-- header for screens medium and up -->
+    <div class = 'header hidden-sm-down fullscreen'>
+      <nav class = 'navbar navbar-dark'>
+      <ul class = 'nav navbar-nav pull-right'>
+	<li class = 'nav-item'>
+	<a href = '#' type = 'button' class = 'btn btn-secondary-outline'>
+	  Sign Up
+	</a>
+	</li>
+	<li class = 'nav-item'>
+	<a href = '#' class = 'nav-link'>
+	  Log In
+	</a>
+      </ul>
+      </nav>
+      <div class = 'container'>
+	<div class = ''>
+	  <h3 id = 'display-1'>Company Name & Logo</h3>
+	  <h1 class = 'display-2'>Your media, anywhere.</h1>
+	  <button type = 'button' class = 'btn btn-primary'>Get Started</button>
+	  <button type = 'button' class = 'btn btn-success-outline'>Learn More</button>
 	</div>
       </div>
-      </section>
-      <section id = 'slide-2'>
-      <div class = 'bcg'
-	data-0 = 'background-color:rgb(1,27,59);'
-	data-top = 'background-color: (0,0,0);'
-	data-anchor-target = '#slide-2'
-	>
-	<div class = 'hsContainer'>
-	  <div class = 'hsContent'>
-	    <h2
-	      data--200-bottom = 'opacity: 0'
-	      data-center = 'opacity: 1'
-	      data-206-top = 'opacity: 1'
-	      data-106-top = 'opacity: 0'
-	      data-anchor-target = '#slide-2 h2'
-	      >
-	      Fades in and out
-	    </h2>
-	  </div>
+    </div>
+
+    <!-- header for screens extra small -->
+    <div class = 'header-small hidden-md-up fullscreen'>
+      <nav class = 'navbar navbar-light bg-faded'>
+      <div class = 'col-xs-6 text-center'>
+	<a href = '#' type = 'button' class = 'btn btn-primary-outline'>
+	  Sign Up
+	</a>
+      </div>
+      <div class = 'col-xs-6 text-center'>
+	<a href = '#' class = 'btn btn-primary'>Sign In</a>
+      </div>
+      </nav>
+      <div class = 'bg-inverse fullscreen'>
+	<div class = 'text-center'>
+	  <h3>Company Name & Logo</h3>
+	  <h1 class = 'display-1'>Your media, anywhere.</h1>
+	  <button type = 'button' class = 'btn btn-primary'>Get Started</button>
+	  <button type = 'button' class = 'btn btn-success-outline'>Learn More</button>
 	</div>
       </div>
-      </section>
-    </body>
-  </html>
+    </div>
+
+    <!-- content section 1 with 3 columns -->
+    <div class = 'content-one fullscreen text-center'>
+      <div class = 'container'>
+	<div class = 'text-center'>
+	  <h1>Lorem ipsum dolor sit amet, consectetur adipiscing<br><small> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></h1>
+	</div>
+	<div class = 'col-xs-12 col-md-4'>
+	  <h3>Sample title one</h3>
+	  <img class = 'img-responsive img-rounded center-block' src = 'http://placehold.it/250x250'/>
+	  <button type = 'button' class = 'btn btn-primary btn-block'>Details</button>
+	  <br class = 'clear'>
+	</div>
+	<div class = 'col-xs-12 col-md-4'>
+	  <h3>Sample title two</h3>
+	  <img class = 'img-responsive img-rounded center-block' src = 'http://placehold.it/250x250'/>
+	  <button type = 'button' class = 'btn btn-primary btn-block'>Details</button>
+	</div>
+	<div class = 'col-xs-12 col-md-4'>
+	  <h3>Sample title three</h3>
+	  <img class = 'img-responsive img-rounded center-block' src = 'http://placehold.it/250x250'/>
+	  <button type = 'button' class = 'btn-3 btn btn-primary btn-block'>Details</button>
+	</div>
+      </div>
+    </div>
+    <div class = 'content-two fullscreen'>
+      <div class = 'text-center container'>
+	<h1 class = 'display-1'>Share your media</h1>
+	<h3>Share your media as media. Your photos, videos, songs, and documents are more than just files. On MediaFire you can share, view, and listen to over 200 different file formats - all right in your web browser or mobile device.</h3>
+	<img src = 'css/tablet.png' class = 'img-responsive center-block' id = 'tablet'/>
+      </div>
+      <br>
+    </div>
+    <div class = 'content-three bg-primary'>
+      <div class = 'text-center'>
+	<br>
+	<h1 class = 'display-1'>Media is now Social</h1>
+	<br>
+      </div>
+    </div>
+    <div class = 'content-four text-center bg-inverse'>
+      <nav class = 'navbar bg-inverse'>
+      <div class = 'footer col-sm-12 col-md-4'>
+	<ul class = 'footer-links'>
+	<h5>Footer Header</h5>
+	<hr>
+	  <li><a href = '#'>Sample footer link</a></li>
+	  <li><a href = '#'>Sample footer</a></li>
+	  <li><a href = '#'>Sample</a></li>
+	  <li><a href = '#'>Sample</a></li>
+	  <li><a href = '#'>Sample footer</a></li>
+	</ul>
+      </div>
+      <div class = 'footer col-sm-12 col-md-4'>
+	<ul class = 'footer-links'>
+	<h5>Footer Header</h5>
+	<hr>
+	  <li><a href = '#'>Sample</a></li>
+	  <li><a href = '#'>Sample footer link</a></li>
+	  <li><a href = '#'>Sample footer</a></li>
+	  <li><a href = '#'>Sample footer link</a></li>
+	  <li><a href = '#'>Sample footer link two</a></li>
+	</ul>
+      </div>
+      <div class = 'footer col-sm-12 col-md-4'>
+	<ul class = 'footer-links'>
+	<h5>Footer Header</h5>
+	<hr>
+	  <li><a href = '#'>Sample footer link</a></li>
+	  <li><a href = '#'>Sample footer three</a></li>
+	  <li><a href = '#'>Sample footer</a></li>
+	  <li><a href = '#'>Sample</a></li>
+	  </ul>
+      </div>
+      </nav>
+    </div>
+    <script>
+      var fullscreen = $('.fullscreen');
+      fullscreen.css("min-height", $(window).height() );
+      $(window).resize(function() {
+	fullscreen.css("min-height", $(window).height() );
+      });
+    </script>
+  </body>
+</html>
